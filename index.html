@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#173e36">
+  <meta name="description" content="Ôn tập đủ 1.679 câu hỏi VLearn với sáu dạng câu, đáp án, gợi ý và tiến độ học được lưu trên trình duyệt.">
+  <title>Ôn tập 1679 · VLearn</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="core.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a href="#question-card" class="skip-link">Đến câu hỏi</a>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Ôn tập 1679 — Trang chính"><span class="brand-mark" aria-hidden="true">▤</span><span>Góc ôn tập<span class="brand-sub">VLEARN / 1679</span></span></a>
+    <div class="top-actions"><span class="autosave"><span></span> Lưu tự động</span><button class="icon-button" id="open-settings" aria-label="Mở cài đặt và sao lưu" title="Cài đặt và sao lưu">⚙</button></div>
+  </header>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Bộ lọc câu hỏi">
+      <div class="sidebar-heading"><span class="eyebrow">THƯ VIỆN CÂU HỎI</span><span class="pill">1.679</span></div>
+      <nav id="type-filters" class="type-filters" aria-label="Lọc theo dạng câu hỏi"></nav>
+      <div class="sidebar-section">
+        <label for="day-filter">Theo bài học</label><select id="day-filter"><option value="">Tất cả bài học</option></select>
+        <label for="status-filter">Theo tiến độ</label><select id="status-filter"><option value="">Tất cả câu hỏi</option><option value="unseen">Chưa xem</option><option value="incorrect">Cần ôn lại</option><option value="correct">Đã nắm vững</option><option value="bookmarked">Đã đánh dấu</option></select>
+      </div>
+      <div class="sidebar-note"><span class="note-icon" aria-hidden="true">✦</span><strong>Mỗi ngày một chút.</strong><p>Hiểu ý chính, thử trả lời rồi đối chiếu. Với câu tự luận, bạn tự đánh giá sau khi xem bài mẫu.</p></div>
+      <div class="sidebar-footer">Đủ 6 dạng câu hỏi<span>Tiến độ lưu trên thiết bị này</span></div>
+    </aside>
+    <main>
+      <section class="intro">
+        <div><div class="eyebrow green">HỌC CHỦ ĐỘNG · NHỚ LÂU HƠN</div><h1>Hôm nay, học thêm một ý.</h1><p>1.679 câu hỏi. Một không gian để luyện tập theo cách của bạn.</p></div>
+        <div class="streak-mark" aria-hidden="true"><span>1679</span><small>ý tưởng để khám phá</small><i>✳</i></div>
+      </section>
+      <section class="stats" aria-label="Tiến độ toàn bộ câu hỏi">
+        <div><span class="stat-icon seen-icon">◷</span><span><strong id="stat-seen">0</strong><small>Đã xem <span>/ 1.679</span></small></span></div>
+        <div><span class="stat-icon correct-icon">✓</span><span><strong id="stat-correct">0</strong><small>Đã nắm vững</small></span></div>
+        <div><span class="stat-icon review-icon">↻</span><span><strong id="stat-review">0</strong><small>Cần ôn lại</small></span></div>
+        <div class="progress-stat"><div><span>Tiến độ nắm vững</span><strong id="progress-label">0%</strong></div><div class="progress-track" role="progressbar" aria-label="Tỷ lệ câu đã nắm vững" aria-valuemin="0" aria-valuemax="1679" aria-valuenow="0"><span id="progress-fill"></span></div></div>
+      </section>
+      <section class="workspace-toolbar" aria-label="Tìm kiếm và điều hướng">
+        <div class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Tìm nội dung, chủ đề hoặc mã câu hỏi…" aria-label="Tìm câu hỏi"></div>
+        <button id="shuffle" class="button subtle" aria-pressed="false"><span aria-hidden="true">⇄</span> Trộn câu</button>
+        <button id="clear-filters" class="text-button" hidden>Xóa bộ lọc</button>
+      </section>
+      <div class="study-layout">
+        <div class="study-column">
+          <div class="section-title"><h2 id="result-label">Tất cả câu hỏi</h2><span id="result-count">1.679 câu</span></div>
+          <article id="question-card" class="question-card" aria-label="Câu hỏi ôn tập"><p class="loading">Đang mở thư viện câu hỏi…</p></article>
+          <nav class="question-navigation" aria-label="Chuyển câu hỏi"><button id="previous" class="button subtle">← Câu trước</button><span id="position-label" aria-live="polite"></span><button id="next" class="button primary">Câu tiếp theo →</button></nav>
+        </div>
+        <aside class="navigator-panel" aria-label="Danh sách câu hỏi">
+          <div class="navigator-heading"><h2>Bản đồ ôn tập</h2><span aria-hidden="true">▦</span></div>
+          <form id="jump-form" class="jump-form"><label for="jump-number">Đến câu số</label><div><input id="jump-number" type="number" inputmode="numeric" min="1" max="1679" placeholder="1–1679" required><button type="submit" aria-label="Đến câu đã chọn">→</button></div></form>
+          <div class="map-legend"><span><i class="correct-dot"></i>Đã nắm</span><span><i class="incorrect-dot"></i>Cần ôn</span><span><i></i>Chưa chấm</span></div>
+          <div id="question-map" class="question-map"></div>
+          <div class="map-pagination"><button id="map-prev" aria-label="Trang câu hỏi trước">←</button><span id="map-page"></span><button id="map-next" aria-label="Trang câu hỏi sau">→</button></div>
+          <p class="map-help">Bấm một số để mở câu hỏi.<br>Số hiển thị là STT trong bộ gốc.</p>
+        </aside>
+      </div>
+      <footer class="main-footer"><span>Được xây từ bộ câu hỏi và đáp án của bạn.</span><span>Không cần đăng nhập để lưu tiến độ trên trình duyệt.</span></footer>
+    </main>
+  </div>
+  <dialog id="settings-dialog" aria-labelledby="settings-title"><div class="dialog-heading"><h2 id="settings-title">Tiến độ của bạn</h2><button id="close-settings" class="icon-button" aria-label="Đóng cài đặt">✕</button></div><p>Tiến độ lưu trong trình duyệt hiện tại. Sao lưu để chuyển sang máy khác hoặc giữ lại trước khi xóa dữ liệu trình duyệt.</p><div class="settings-actions"><button id="export-progress" class="button primary">Tải bản sao tiến độ</button><label class="button subtle file-button" for="import-progress">Khôi phục từ bản sao<input id="import-progress" type="file" accept="application/json,.json" hidden></label><button id="reset-progress" class="button danger">Xóa toàn bộ tiến độ</button></div><p class="muted small">Đáp án tự luận là bài mẫu để đối chiếu. Những câu có đề mâu thuẫn hoặc cần rubric riêng đều có lưu ý tại câu hỏi.</p></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <noscript>Hãy bật JavaScript để dùng trang ôn tập. Toàn bộ câu hỏi đã đi kèm trang web, không cần gọi dịch vụ AI.</noscript>
+</body>
+</html>
